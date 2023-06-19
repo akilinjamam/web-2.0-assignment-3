@@ -38,3 +38,8 @@ export const cowService = {
   updateSingleCowService,
   deleteSingleCowService,
 };
+
+// apollo repo link:
+/* 
+ https://github.com/Programming-Hero-Web-Course4/l2a3-cow-hut-backend-assignment-akilinjamam.git
+*/
