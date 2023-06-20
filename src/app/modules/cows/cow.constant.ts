@@ -29,3 +29,14 @@ export const cowBreed: IBreedEnum[] = [
 export const cowLabel: ILabelEnum[] = ["for sale", "sold out"];
 
 export const cowCategory: ICategoryEnum[] = ["Dairy", "Beef", "DualPurpose"];
+
+export const cowSearchableFields = [
+  "name",
+  "age",
+  "price",
+  "location",
+  "breed",
+  "weight",
+  "label",
+  "category",
+];

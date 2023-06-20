@@ -18,13 +18,16 @@ const createCowController = catchAsync(async (req: Request, res: Response) => {
 });
 
 const getAllCowController = catchAsync(async (req: Request, res: Response) => {
-  const result = await cowService.getAllCowService();
+  const paginationOption = req.query;
+
+  const result = await cowService.getAllCowService(paginationOption);
 
   sendRespone(res, {
     statusCode: httpStatus.OK,
     success: true,
     message: "Cows retrieved successfully",
-    data: result,
+    meta: result.meta,
+    data: result.data,
   });
 });
 
